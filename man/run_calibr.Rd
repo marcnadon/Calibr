@@ -4,8 +4,8 @@
 \alias{run_calibr}
 \title{Survey dataset by species group and summaries}
 \usage{
-run_calibr(SET, std_method, stat_model = c("GLM", "GLMM"), min_obs = 10,
-  n_sample = 5, parallel = TRUE)
+run_calibr(SET, std_method, stat_model = c("GLM", "GLMM"),
+  min_obs = 10, n_sample = 5, parallel = TRUE)
 }
 \arguments{
 \item{SET}{Survey Dataset}
