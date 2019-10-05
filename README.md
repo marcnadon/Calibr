@@ -43,7 +43,7 @@ Note:
 
 ## Output
 
-By default, ouptut from `export_results` will be written to a new `Calibr` subdirectory of the the users HOME directory. 
+By default, output from `export_results` will be written to a new `Calibr` subdirectory of the the users HOME directory. 
 
 For Windows users, the HOME directory is typically located at `C:/users/[USERNAME]/Documents/`. Where `[USERNAME]` is the system's user account name.
 
