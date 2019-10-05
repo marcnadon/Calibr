@@ -25,6 +25,8 @@ require(data.table)
 require(Calibr)
 
 SET <- SMALL_UNPAIR
+results <- run_calibr(SET,std_method="nSPC",stat_model="GLM")
+export_results(results)
 ```
 Note:  
 The SMALL_UNPAIR data set provides an example of the necessary input data format.  
@@ -35,13 +37,6 @@ REP: Data replicates (e.g. individual sites).
 METHOD: The sampling method used (has to be limited to 2 methods, standard and secondary).  
 DENSITY: Species abundance for each REP (e.g. counts, density, biomass).  
 PRESENCE: Presence (1) or absence (0) of a GROUP at each REP. This value can also be a fraction if there were subreplicates within replicates (e.g. if a species is seen on transect 1 but not on transect 2, PRESENCE will equal 0.5).  
-
-To Run the model and export results:  
-```
-results <- run_calibr(SET,std_method="nSPC",stat_model="GLM")
-export_results(results)
-
-```
 Note:  
 "std_method" defines the name of the standard method the secondary method's data need to be converted to.  
 "stat_model" defines the type of model use to run the calibration analyses (either "GLM" or "GLMM").  
